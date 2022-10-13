@@ -28,6 +28,7 @@ app.use("/bootstrap", express.static(path.join(__dirname, 'node_modules/bootstra
 
 app.use('/', index);
 app.use('/users', users);
+app.use("/portfolio", express.static(path.join(__dirname, 'portfolio')));
 
 
 // catch 404 and forward to error handler
